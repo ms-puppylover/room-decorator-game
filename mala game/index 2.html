@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Decorator Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="currency-bar">
+    Coins: <span id="coins">500</span>
+  </div>
+  <div id="game-container">
+    <div id="store-panel">
+      <h2>Store</h2>
+      <div id="store-items"></div>
+    </div>
+    <div id="room-area">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+        <button id="add-room-btn">Add New Room</button>
+        <button id="inventory-btn">Inventory</button>
+        <label for="room-select">Switch Room:</label>
+        <select id="room-select"></select>
+      </div>
+      <h2>Your Room</h2>
+      <div id="room"></div>
+    </div>
+  </div>
+  <div id="inventory-modal" style="display:none;"></div>
+  <script src="game.js"></script>
+</body>
+</html> 
